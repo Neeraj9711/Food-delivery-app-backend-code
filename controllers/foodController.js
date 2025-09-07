@@ -27,7 +27,9 @@ const addFood = async (req, res) =>{
 const listFood = async (req,res) =>{
 
     try{
+        console.log("Food List")
        const foods = await foodModel.find({})
+       console.log("AAAAAA"+JSON.stringify(foods))
        res.json({success:true, message: foods})
     }
     catch(error){
