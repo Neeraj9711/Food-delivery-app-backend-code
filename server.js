@@ -13,7 +13,7 @@ const PORT = 4000
 app.use(express.json())
 app.use(cors())
 
-// db connection
+//db connection
 
 connectDB();
 
