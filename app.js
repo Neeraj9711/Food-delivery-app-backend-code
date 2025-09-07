@@ -17,7 +17,7 @@ app.use(cors())
 
 connectDB();
 
-//Api Endpoints urls
+//Api Endpoints url
 
 app.use("/api/food",foodRouter)
 app.use("/images",express.static('uploads'))
